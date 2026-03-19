@@ -58,6 +58,9 @@ npm run dev
 
 ---
 
+<img width="1446" height="876" alt="Image" src="https://github.com/user-attachments/assets/8151848b-c27c-4b09-be92-45c9077e5667" />
+<img width="1215" height="889" alt="Image" src="https://github.com/user-attachments/assets/121bd7a8-1374-4f06-9ef8-b557b4f24460" />
+<img width="1321" height="274" alt="Image" src="https://github.com/user-attachments/assets/0f6f9f1b-1ea4-4f52-a05c-8e666d30eae4" />
 ## 🔑 วิธีขอ OpenRouter API Key ฟรี
 
 1. ไปที่ **[https://openrouter.ai](https://openrouter.ai)** แล้วสมัครสมาชิก (ฟรี)
