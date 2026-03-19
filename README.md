@@ -2,92 +2,92 @@
 
 # 🤖 AI Visual Chatbot
 
-A modern AI chatbot built with **React + Vite** that can answer questions and **analyze images** — powered by free models via **OpenRouter AI**.
+แชทบอท AI สมัยใหม่ที่สร้างด้วย **React + Vite** สามารถตอบคำถามและ **วิเคราะห์รูปภาพ** ได้ — ขับเคลื่อนด้วยโมเดลฟรีผ่าน **OpenRouter AI**
 
 ---
 
-## ✨ Features
+## ✨ ฟีเจอร์เด่น
 
-- 💬 **Chat with AI** — Ask anything in any language
-- 🖼️ **Image Analysis** — Upload a photo and ask questions about it
-- ⚡ **Thinking Animation** — Smooth typing indicator while AI responds
-- 🎨 **Premium Dark UI** — Glassmorphism design with animated backgrounds
-- 🆓 **100% Free** — Uses free-tier models via OpenRouter
+- 💬 **คุยกับ AI** — ถามอะไรก็ได้ทุกภาษา
+- 🖼️ **วิเคราะห์รูปภาพ** — อัปโหลดรูปแล้วถามเกี่ยวกับรูปนั้นได้เลย
+- ⚡ **แอนิเมชันขณะคิด** — แสดง typing indicator ขณะ AI ประมวลผล
+- 🎨 **UI สวยงาม Dark Mode** — ดีไซน์ Glassmorphism พร้อม animated background
+- 🆓 **ฟรี 100%** — ใช้โมเดลระดับ free tier ผ่าน OpenRouter
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Category | Technology |
+| หมวดหมู่ | เทคโนโลยี |
 |----------|-----------|
 | Framework | [React 19](https://react.dev/) + [Vite 6](https://vitejs.dev/) |
 | AI Provider | [OpenRouter](https://openrouter.ai/) |
-| Text Model | `nvidia/nemotron-3-super-120b-a12b:free` |
-| Vision Model | `meta-llama/llama-3.2-11b-vision-instruct:free` |
+| โมเดลข้อความ | `nvidia/nemotron-3-super-120b-a12b:free` |
+| โมเดลวิเคราะห์ภาพ | `meta-llama/llama-3.2-11b-vision-instruct:free` |
 | AI SDK | [openai](https://www.npmjs.com/package/openai) (OpenAI-compatible) |
 | Styling | Vanilla CSS (Glassmorphism) |
 | Fonts | Google Fonts — Inter, Space Grotesk |
 
 ---
 
-## 🚀 Run Locally
+## 🚀 รันบนเครื่องตัวเอง (Local)
 
-### Prerequisites
-- [Node.js](https://nodejs.org/) v18+
-- An OpenRouter API Key (free — see below)
+### สิ่งที่ต้องมีก่อน
+- [Node.js](https://nodejs.org/) v18 ขึ้นไป
+- OpenRouter API Key (ฟรี — ดูวิธีด้านล่าง)
 
-### Steps
+### ขั้นตอน
 
 ```bash
-# 1. Clone the repo
+# 1. Clone โปรเจกต์
 git clone https://github.com/ms584/Simple_AI-Visual-Chatbot.git
 cd Simple_AI-Visual-Chatbot/my-ai-app
 
-# 2. Install dependencies
+# 2. ติดตั้ง dependencies
 npm install
 
-# 3. Set up your API key
+# 3. ตั้งค่า API Key
 cp .env.example .env
-# Then open .env and paste your OpenRouter key
+# จากนั้นเปิดไฟล์ .env แล้วใส่ OpenRouter Key ของคุณ
 
-# 4. Start the dev server
+# 4. เริ่ม dev server
 npm run dev
 ```
 
-Open **http://localhost:5173** in your browser 🎉
+เปิด **http://localhost:5173** ในเบราว์เซอร์ได้เลย 🎉
 
 ---
 
-## 🔑 How to Get a Free OpenRouter API Key
+## 🔑 วิธีขอ OpenRouter API Key ฟรี
 
-1. Go to **[https://openrouter.ai](https://openrouter.ai)** and sign up (free)
-2. Navigate to **[https://openrouter.ai/keys](https://openrouter.ai/keys)**
-3. Click **"Create Key"** → give it a name → copy the key
-4. Open `my-ai-app/.env` and paste it:
+1. ไปที่ **[https://openrouter.ai](https://openrouter.ai)** แล้วสมัครสมาชิก (ฟรี)
+2. ไปที่หน้า **[https://openrouter.ai/keys](https://openrouter.ai/keys)**
+3. กด **"Create Key"** → ตั้งชื่อ → Copy key ที่ได้
+4. เปิดไฟล์ `.env` แล้วใส่ key ลงไป:
 
 ```env
 VITE_OPENROUTER_API_KEY=sk-or-v1-xxxxxxxxxxxxxxxx
 ```
 
-> **Note:** The free models used in this project have no cost. OpenRouter's free tier is generous enough for personal projects and learning.
+> **หมายเหตุ:** โมเดลที่ใช้ในโปรเจกต์นี้เป็นโมเดลฟรีทั้งหมด OpenRouter ให้โควตาฟรีเพียงพอสำหรับโปรเจกต์ส่วนตัวและการเรียนรู้
 
 ---
 
-## 📁 Project Structure
+## 📁 โครงสร้างโปรเจกต์
 
 ```
 my-ai-app/
 ├── src/
-│   ├── App.jsx        # Main component — chat logic & AI API calls
-│   ├── App.css        # Premium glassmorphism styles
-│   └── index.css      # Global reset & design tokens
-├── index.html         # HTML entry with SEO meta
-├── .env               # Your API key (not committed)
-└── .env.example       # Template for API key setup
+│   ├── App.jsx        # คอมโพเนนต์หลัก — logic การแชทและเรียก AI API
+│   ├── App.css        # สไตล์ glassmorphism สวยงาม
+│   └── index.css      # Global reset และ design tokens
+├── index.html         # HTML หลักพร้อม SEO meta
+├── .env               # API Key ของคุณ (ไม่ถูก commit ขึ้น Git)
+└── .env.example       # ตัวอย่างการตั้งค่า API Key
 ```
 
 ---
 
 ## 📄 License
 
-MIT — feel free to use, modify, and build upon this project.
+MIT — ใช้ แก้ไข และต่อยอดได้อย่างอิสระ
