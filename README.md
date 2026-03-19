@@ -1,4 +1,4 @@
-<img width="864" height="844" alt="AI Visual Chatbot UI" src="https://github.com/user-attachments/assets/2972ae18-a1bc-4208-b954-066a248a4c0b" />
+<img width="900" height="850" alt="Image" src="https://github.com/user-attachments/assets/dad3806d-80ee-4799-a63d-c1e47ec22c29" />
 
 # 🤖 AI Visual Chatbot
 
